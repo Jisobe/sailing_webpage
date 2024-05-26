@@ -1,0 +1,205 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Sunfish Racing</title>
+<style>
+	
+	* {margin:0; padding:0}
+
+	body{
+		font-family: 'Times New Roman', Times, serif;
+	}
+
+	#content {
+		background-color: #C0DCFA;
+		width: 800px;
+		border-radius: 20px;
+		margin: 0 auto;
+	}
+
+	#header, #footer{
+		background: url(bg.png);
+		color: white;
+		border-radius: 20px;
+		box-shadow: 6px 6px 10px rgb(155, 155, 155);
+		text-align: center;
+		text-shadow: 2px 2px 4px rgb(0, 0, 0);
+		font-weight: bold;
+	}
+
+	#header{
+		height: 120px;
+		line-height: 120px;
+		font-size: 48px;
+	}
+
+	nav{
+		height: 80px;
+		position: relative;
+	}
+	
+	.dropdown_menu {position:absolute}  
+	
+	#dropdown_home{
+		left: 40px;
+	}
+
+	#dropdown_calendar{
+		left: 220px;
+	}
+
+	#dropdown_videos{
+		left: 400px;
+	}
+
+	#dropdown_photo{
+		left: 580px;
+	}
+     
+	.dropbutton {   
+		background: url(button.png);
+		width: 170px;
+		height: 41px;
+		text-align: center;
+		color: white;
+		line-height: 41px;
+		box-shadow: 6px 6px 10px rgb(135, 135, 135);
+		margin: 20px 0 0 0;
+		font-size: 20px;
+		font-weight: 595;
+	}
+
+	.dropdown_links {   
+		height:0px;
+		background-color: #fff;
+		opacity: .9;
+		box-shadow: 4px 4px 12px 0px #999;
+		overflow:hidden;
+		transition:height .5s;
+	}
+			
+	a {   
+		color: black;
+		height:40px;
+		line-height:40px;
+		text-align:center;
+		text-decoration: none;
+		display: block;
+	}
+					
+	.dropdown_menu:hover .dropdown_links {height:auto;}
+					
+	a:hover {background-color: #eee;}
+
+	#information{
+		margin: 0 60px 0 40px;
+		text-align: justify;
+	}
+
+	video{
+		float: left;
+		margin: 0px 20px 0px 0px;
+	}
+
+	#title{
+		font-size:32px;
+		line-height: 1.2;
+		font-weight: 600;
+	}
+
+	#description{
+		font-size: 16px;
+		line-height: 1.9;
+	}
+
+	.paragraph{
+		margin: 20px 0 30px 0;
+	}
+
+	#footer{
+		height: 60px;
+		line-height: 60px;
+		font-size: 25px;
+	}
+	
+</style>
+</head>
+	
+<body>
+
+	<div id="content">
+
+		<header id="header">Sunfish Racing in Oklahoma!</header>
+
+		<nav>
+
+			<div id=dropdown_home class="dropdown_menu">
+				<div class="dropbutton">Home</div>
+				<div class="dropdown_links">	
+					<a href="#">Link 1</a>	
+				</div>
+			</div>
+
+			<div id=dropdown_calendar class="dropdown_menu">
+				<div class="dropbutton">Calendar</div>
+				<div class="dropdown_links">			
+					<a href="#">Link 1</a>
+					<a href="#">Link 2</a>					
+				</div>
+			</div>
+
+			<div id=dropdown_videos class="dropdown_menu">
+				<div class="dropbutton">Videos</div>				
+				<div class="dropdown_links">					
+					<a href="#">Link 1</a>
+					<a href="#">Link 2</a>
+					<a href="#">Link 3</a>					
+				</div>
+			</div>
+
+			<div id=dropdown_photo class="dropdown_menu">
+				<div class="dropbutton">Photo Gallery</div>				
+				<div class="dropdown_links">					
+					<a href="#">Link 1</a>
+					<a href="#">Link 2</a>
+					<a href="#">Link 3</a>					
+					<a href="#">Link 4</a>
+					<a href="#">Link 5</a>
+					<a href="#">Link 6</a>
+				</div>
+			</div>
+							
+		</nav>
+
+		<div id="information">
+
+			<video width="320" height="180" controls="controls">				
+				<source src="sail.webm" type="video/webm">
+				Your browser does not support the video tag.				
+			</video>
+				
+			<div id="title">Two Sunfish Head to the Windward Mark</div>
+
+			<div id="description">
+
+				<div class="paragraph">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+
+				<div class="paragraph">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+
+			</div>
+
+		</div>
+
+		<footer id="footer">ANOTHER BEAUTIFUL DAY AT THE LAKE!</footer>
+
+	</div>
+
+</body>	
+
+</html>
